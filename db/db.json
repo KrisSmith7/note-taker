@@ -1,6 +1,34 @@
 [
-    {
-        "title":"Test Title",
-        "text":"Test text"
-    }
+  {
+    "title": "Test Title",
+    "text": "Test text"
+  },
+  {
+    "title": "TRY AGAIN",
+    "text": "this the 3rd note!"
+  },
+  {
+    "title": "Hey3",
+    "text": "this again"
+  },
+  {
+    "title": "Party",
+    "text": "playoffs"
+  },
+  {
+    "title": "what happened",
+    "text": "huh"
+  },
+  {
+    "title": "TESTING",
+    "text": "yooooooooooooo"
+  },
+  {
+    "title": "NEW",
+    "text": "Dat new new!"
+  },
+  {
+    "title": "We STAN Katya",
+    "text": "yes we do"
+  }
 ]
