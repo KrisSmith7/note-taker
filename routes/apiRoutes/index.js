@@ -2,6 +2,7 @@ const router = require('express').Router();
 const notes = require('../../db/db.json');
 const path = require('path');
 const fs = require('fs');
+const { v4: uuidv4 } = require('uuid');
 
 
 router.get('/notes', (req, res) => {
@@ -16,7 +17,7 @@ router.post('/notes', (req, res) => {
     const newNote = {
       title,
       text,
-      // review_id: uuid(),
+      review_id: uuidv4(),
     };
 
     const response = {
