@@ -49,7 +49,7 @@ router.delete('/notes/:id', (req, res) => {
     JSON.stringify(updatedNotes, null, 2)
   );
 
-  fs.readFile(
+  fs.readFileSync(
     path.join(__dirname, '../../db/db.json'), (err) => {
       if (err) {
         console.log(err);
