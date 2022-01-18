@@ -10,7 +10,7 @@ router.get('/notes', (req, res) => {
 });
 
 router.post('/notes', (req, res) => {
-  console.info(`${req.method} request received to add a note`);
+  // console.info(`${req.method} request received to add a note`);
 
   const { title, text } = req.body;
   if (title && text) {
@@ -33,7 +33,7 @@ router.post('/notes', (req, res) => {
     );
 
     res.json(notes);
- 
+
   } else {
     res.json('Error in posting note.');
   }
@@ -41,16 +41,24 @@ router.post('/notes', (req, res) => {
 
 router.delete('/notes/:id', (req, res) => {
   const id = req.params.id;
-  
-  const updatedNotes = notes.filter(note=> note.id != id)
-  console.log (updatedNotes)
+  const updatedNotes = notes.filter(note => note.id != id)
+  // console.log (updatedNotes);
 
   fs.writeFileSync(
     path.join(__dirname, '../../db/db.json'),
     JSON.stringify(updatedNotes, null, 2)
   );
- 
-  }
+
+  fs.readFile(
+    path.join(__dirname, '../../db/db.json'), (err) => {
+      if (err) {
+        console.log(err);
+      }
+    }
+    // JSON.stringify(updatedNotes, null, 2)
+  );
+  res.json(updatedNotes)
+}
 );
 
 
