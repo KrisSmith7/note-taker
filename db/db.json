@@ -4,18 +4,8 @@
     "text": "Test text"
   },
   {
-    "title": "AGain",
-    "text": "test",
-    "review_id": "e2575097-e110-42fd-a63c-065e68e5181c"
-  },
-  {
     "title": "oooh okay",
     "text": "let's see the data",
-    "review_id": "a689ae1e-3290-4b43-b31c-67248d86c0bc"
-  },
-  {
-    "title": "hmm",
-    "text": "whatss happenin capn",
-    "review_id": "43d31221-b3d9-4cba-89ab-ff042782aef1"
+    "id": "a689ae1e-3290-4b43-b31c-67248d86c0bc"
   }
 ]

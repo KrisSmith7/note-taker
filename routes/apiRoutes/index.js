@@ -6,7 +6,7 @@ const { v4: uuidv4 } = require('uuid');
 
 
 router.get('/notes', (req, res) => {
-  res.json(notes)
+  res.json(notes);
 });
 
 router.post('/notes', (req, res) => {
@@ -17,7 +17,7 @@ router.post('/notes', (req, res) => {
     const newNote = {
       title,
       text,
-      review_id: uuidv4(),
+      id: uuidv4(),
     };
 
     const response = {
@@ -39,6 +39,19 @@ router.post('/notes', (req, res) => {
   }
 });
 
+router.delete('/notes/:id', (req, res) => {
+  const id = req.params.id;
+  
+  const updatedNotes = notes.filter(note=> note.id != id)
+  console.log (updatedNotes)
+
+  fs.writeFileSync(
+    path.join(__dirname, '../../db/db.json'),
+    JSON.stringify(updatedNotes, null, 2)
+  );
+ 
+  }
+);
 
 
 
