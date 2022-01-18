@@ -13,8 +13,12 @@
 
   Link to Github Repo: [https://github.com/krissmith7/note-taker](https://github.com/krissmith7/note-taker)
 
+Link to Deployed Application: [https://digitalnote-taker.herokuapp.com](https://digitalnote-taker.herokuapp.com)
+
   ## Usage
-  Link to Deployed Application: [https://github.com/krissmith7/note-taker](https://github.com/krissmith7/note-taker)
+   Below is a demo of the application in use.
+
+  ![Demo of application](./public/assets/images/Notetaker.gif)
 
   ## Questions
   Contact the developer with any questions!
